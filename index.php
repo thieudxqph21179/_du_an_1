@@ -7,7 +7,7 @@ const URL_SERVER = './views/server/';
 const URL_CONTROLLER = './controllers/';
 // var_dump($_GET);die;
 if (!isset($_GET["admin"])) {
-    echo "client";
+    
     // var_dump(BASE_URL."views/layouts/home.php");die;
     require_once(URL_CLIENT . 'index.php');
 } else {

@@ -8,8 +8,8 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/62f946fbdf.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="grid.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="views/client/grid.css">
+    <link rel="stylesheet" href="views/client/style.css">
 </head>
 <body>
     <header class="grid wide ">
@@ -87,23 +87,16 @@
     <div class="product grid wide">
         <h2>Sản phẩm</h2>
         <div class="row">
+            <?php foreach($data['products'] as $product ): ?>
             <div class="item col l-3 m-6 c-12">
-                <img src="img/nh_t-k_-ch_-b_-nh_t-nh_15.jpg" alt="" width="600px" height="300px">
+                <img src="views/client/image/<?= $product['hinh_anh'] ?>" alt="" width="600px" height="300px">
                 <div class="item_info">
-                    <h3>Nhật Ký Chú Bé Nhút Nhát</h3>
-                    <p>Giá tiền: 52.000 Đ</p>
+                    <h3><?= $product['hinh_anh'] ?></h3>
+                    <p>Giá tiền: <?= $product['hinh_anh'] ?>.000 Đ</p>
                     <button>Thêm vào giỏ hàng</button>
                 </div>
             </div>
-            <div class="item col l-3 m-6 c-12">
-                <img src="img/nh_t-k_-ch_-b_-nh_t-nh_15.jpg" alt="" width="600px" height="300px">
-            </div>
-            <div class="item col l-3 m-6 c-12">
-                <img src="img/nh_t-k_-ch_-b_-nh_t-nh_15.jpg" alt="" width="600px" height="300px">
-            </div>
-            <div class="item col l-3 m-6 c-12">
-                <img src="img/nh_t-k_-ch_-b_-nh_t-nh_15.jpg" alt="" width="600px" height="300px">
-            </div>
+           <?php endforeach; ?>
         </div>
     </div>
 

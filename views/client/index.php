@@ -1,14 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>
-        Xin Chào Người Dùng
-    </h1>
-</body>
-</html>
+<?php
+    include URL_CONTROLLER.'ProductController.php';
+    $lay_ra = new ProductController;
+
+    if (isset($_GET['action'])) {
+        $action = $_GET['action'];
+        switch ($action) {
+            case "product":
+                
+                break;
+        }
+    }else{
+        $lay_ra->lay_ra_san_pham();
+    
+    }
+
+?>

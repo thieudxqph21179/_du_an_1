@@ -8,15 +8,18 @@ class BaseModel{
     }
 
 
-//     static function all()
-//     {
-//         $model = new static;
-//         // var_dump($model);die;
-//         $query = " SELECT * FROM $model->table ";
-//         $stmt =  $model->conn->prepare($query);
-//         $stmt->execute();
-//         return $stmt->fetchAll();
-//     }
+    static function all()
+    {
+        $model = new static;
+        // var_dump($model);die;
+        $query = " SELECT * FROM $model->table ";
+        $stmt =  $model->conn->prepare($query);
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
+
+
+
 
 
 
