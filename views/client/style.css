@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: antiquewhite; */
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul li{
+    list-style: none;
+}
+
+header{
+    height: 300px;
+    background-color: #C5DFEA;
+}
+
+.head{
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.head_img img{
+    max-width: 100%;
+    height: auto;
+}
+
+.head_seach input{
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding: 0 12px;
+}
+
+.head_seach button{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+.head_login{
+    height: 75px;
+    margin-right: 16px;
+}
+
+.head_login ul{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.head_login ul li {
+    text-align: center;
+    padding: 0 12px;
+}
+
+.navbar{
+    display: block;
+    width: 260px;
+}
+
+.navbar p{
+    background-color: red;
+    font-size: 24px;
+    padding: 12px 18px;
+    margin: 0;
+}
+
+p:hover .navbar ul{
+    display: block;
+}
+
+.navbar ul{
+    padding: 0;
+    display: none;
+}
+
+.navbar ul li{
+    background-color: #ccc;
+    padding: 14px 18px;
+}
+
+.navbar ul li:hover{
+    background-color: cadetblue;
+    font-size: 24px;
+}
+
+.navbar ul li a:hover{
+    color: white;
+}
+
+.banner{
+    margin-top: 24px !important;
+}
+
+.product h2{
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    margin: 16px 0;
+    padding: 8px 0;
+}
+
+.item {
+    position: relative;
+    text-align: center;
+}
+
+.item:hover .item_info{
+    display: block;
+}
+
+.item img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.item_info{
+    position: absolute;
+    top: 0;
+    background-color: #ccc;
+    border-radius: 10px;
+    display: none;
+}
+
+.item_info p{
+    margin-top: 32px;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.item_info button{
+    margin-top: 90px;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    font-size: 18px;
+    width: 70%;
+    border: none;
+    background-color: aqua;
+    color: azure;
+    border-radius:35px;
+}
+
+footer{
+    height: 300px;
+    background-color: bisque;
+}
+
+.footer_item{
+    text-align: center;
+}
+
+.footer_item p{
+    font-size: 20px;
+}
+
+footer h2{
+    padding: 24px 0;
+}
