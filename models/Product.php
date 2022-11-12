@@ -10,7 +10,7 @@ class Product {
  public $table="san_pham";
  public function lay_san_pham(){
 
-    $sql="select * from  san_pham order by don_gia desc limit 4 ";
+    $sql="select * from  san_pham order by don_gia desc limit 15 ";
     $stmt = $this->model->conn->prepare($sql);
         $stmt->execute();
         return $stmt->fetchAll();
